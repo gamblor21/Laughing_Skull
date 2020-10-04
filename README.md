@@ -1,11 +1,24 @@
 # Light Sensitive Laughing Skull
 ![Laughing Skull](/hallowing.png)
 
-Create a fun prank for Halloween or any time of the year. Hide the project somewhere dark and wait. When someone opens a door or shines a light on the proejct wakes up displaying an animated laughing skull and playing evil laughter. These last until it gets dark again (or they find the battery)
+Create a fun prank for Halloween or any time of the year. Hide the project somewhere dark and wait. When someone opens a door or shines a light on the project wakes up displaying an animated laughing skull and playing evil laughter. These last until it gets dark again (or they find the battery)
+
+## Installation
+This project required CircuitPython 6.x. The beta version of this release can be found from the [CircuitPython](https://circuitpython.org/) website. Instructions for installing new releases of CircuitPython can be found there.
+
+Copy the appropriate *code-xxxxxx.py* onto your CircuitPython device and rename it to **code.py**.
+
+Copy the *skull_* bmp files and the *laugh.mp3* file to your device.
+
+Depending on your device you may require libraries to be installed in your lib directory. 
+* adafruit_imageload (All)
+* adafruit_apds9960 (Clue)
+* adafruit_gizmo (Circuit Playground Bluefruit)
+* adafruit_st7789 (For ST7789 breakout TFT)
 
 ## Recommended Hardware
 
-This project is written in CircuitPython and has been tested on several Adafruit boards and is easily adaptable to run on other hardware. It runs best on a M4 processor but can run acceptable on an nRF52840. The code has switches to turn off audio or animation, and to change the animation speed slower. All of which may help on a slower processor. The images are scaled for a 240x240 display but could be resized. The audio is mono and should play through any mono speaker.
+This project is written in CircuitPython and has been tested on several Adafruit boards and is easily adaptable to run on other hardware. It runs best on a M4 processor but can run acceptably on an nRF52840. The code has switches to turn off audio or animation, and to change the animation speed slower. All of which may help on a slower processor. The images are scaled for a 240x240 display but could be resized. The audio is mono and should play through any mono speaker.
 
 Of the boards I have tested it on the project works best on the Hallowing M4. This amazing board has everything you need already built into it. The screen, light sensor and audio are all already there so nothing besides a small speaker is required.
 
@@ -45,7 +58,7 @@ This project could be expanded upon to change how it reacts in even more ways.
 * Boards like the Hallowing have a built in motion sensor that could be used (if you shake it maybe it says to put it down!)
 * NeoPixels could light up in certain situations or to add to the surprise
 * A microphone sensor could allow the project to react to sound instead of light
-* New sounds an animations can be added following the base code that is provided
+* New sounds and animations can be added following the base code that is provided
 
 
 ### Credits for Audio
