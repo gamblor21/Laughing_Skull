@@ -1,4 +1,4 @@
-# Light Sensitive Laughing Skull
+# Light Triggered Laughing Skull
 ![Laughing Skull](/hallowing.png)
 
 Create a fun prank for Halloween or any time of the year. Hide the project somewhere dark and wait. When someone opens a door or shines a light on the project wakes up displaying an animated laughing skull and playing evil laughter. These last until it gets dark again (or they find the battery)
