@@ -1,7 +1,7 @@
-# Light Sensitive Laughing Skull
+# Light Triggered Laughing Skull
 ![Laughing Skull](/hallowing.png)
 
-Create a fun prank for Halloween or any time of the year. Hide the project somewhere dark and wait. When someone opens a door or shines a light on the project wakes up displaying an animated laughing skull and playing evil laughter. These last until it gets dark again (or they find the battery)
+Create a fun prank for Halloween or any time of the year. Hide the project somewhere dark and wait. When someone opens a door or shines a light on the project, it wakes up displaying an animated laughing skull and playing evil laughter. This continues until it gets dark again (or they find and unplug the battery!)
 
 ## Installation
 This project required CircuitPython 6.x. The beta version of this release can be found from the [CircuitPython](https://circuitpython.org/) website. Instructions for installing new releases of CircuitPython can be found there.
