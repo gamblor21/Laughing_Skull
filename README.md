@@ -16,6 +16,8 @@ Depending on your device you may require libraries to be installed in your lib d
 * adafruit_gizmo (Circuit Playground Bluefruit)
 * adafruit_st7789 (For ST7789 breakout TFT)
 
+****NEW**** Use a distance sensor to detect someone close and start laughing. The code-distance.py file is set to trigger from a UC-100 based sensors available here https://www.adafruit.com/product/4019. Print out the 3d tombstone and embed everything in a single item.
+
 ## Recommended Hardware
 
 This project is written in CircuitPython and has been tested on several Adafruit boards and is easily adaptable to run on other hardware. It runs best on a M4 processor but can run acceptably on an nRF52840. The code has switches to turn off audio or animation, and to change the animation speed slower. All of which may help on a slower processor. The images are scaled for a 240x240 display but could be resized. The audio is mono and should play through any mono speaker.
@@ -37,6 +39,7 @@ All the projects had a small 4-8ohm speaker attached for audio out.
 * 240x240 Display
 * Audio out
 * Light sensor
+* Distance sensor (optional)
 
 It is fairly easy to swap out components if you have another you would like to use. All initializations are at the top of the code.
 
@@ -44,7 +47,12 @@ It is fairly easy to swap out components if you have another you would like to u
 The configuration is all near the top of the python file. These are the most likely values you will want to change.
 
 ```python
+USE_LIGHT_SENSOR = False # if you want to disable the light sensor
+USE_DISTANCE_SENSOR = True # if you want to disable the distance sesnor
+USE_NEOPIXELS = True # if you want to use the onboard neopixels
+
 LIGHT_VALUE = 1500      # value at which we turn on / off the laughing
+DISTANCE_VALUE = 50      # value at which we turn on / off the laughing
 MODE_SWITCH_TIME = 0.2  # how long to wait for a changed reading
                         # to be consistent to change modes
 LAUGHING_SPEED = 0.1   # how fast the animation runs
@@ -56,7 +64,6 @@ USE_ANIMATION = True   # if you want to disable animation
 ## Ideas
 This project could be expanded upon to change how it reacts in even more ways. 
 * Boards like the Hallowing have a built in motion sensor that could be used (if you shake it maybe it says to put it down!)
-* NeoPixels could light up in certain situations or to add to the surprise
 * A microphone sensor could allow the project to react to sound instead of light
 * New sounds and animations can be added following the base code that is provided
 
